@@ -1,11 +1,5 @@
 // app/ts/views/NegociacoesView.ts
-class NegociacoesView {
-    constructor(seletor) {
-        this._elemento = document.querySelector(seletor);
-    }
-    update(model) {
-        this._elemento.innerHTML = this.template(model);
-    }
+class NegociacoesView extends View {
     template(model) {
         /*
 Utilizamos template string pela comunidade de quebras de linha, além de permitir interpolações sem o uso do operador +

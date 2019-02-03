@@ -6,6 +6,7 @@ class NegociacaoController {
     private _inputQuantidade: HTMLInputElement;
     private _inputValor: HTMLInputElement;
     private _negociacoes = new Negociacoes();
+    private _mensagemView = new MensagemView('#mensagemView');
      /*
         propriedade _negociacoesView em NegociacaoController. Ela guardará uma instância de NegociacoesView
     
@@ -44,5 +45,6 @@ class NegociacaoController {
 
         // depois de adicionar, atualiza a view novamente para refletir os dados
         this._negociacoesView.update(this._negociacoes);
+        this._mensagemView.update('Negociação adicionada com sucesso');
     }
 }
