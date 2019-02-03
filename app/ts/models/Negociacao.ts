@@ -1,14 +1,15 @@
 class Negociacao {
 
-    private _data;
+    /*private _data;
     private _quantidade;
-    private _valor;
+    private _valor;*/
     
-    constructor(data, quantidade, valor) {
+    //Resumo para criação das variaveis pelo Ts;
+    constructor(private _data:Date,private _quantidade:number,private _valor:number) {
 
-        this._data = data;
+        /*this._data = data;
         this._quantidade = quantidade;
-        this._valor = valor;
+        this._valor = valor;*/
     }
 
     get data() {
