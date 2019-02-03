@@ -7,8 +7,6 @@ evento submit do formulário de index.html a chamada do método adiciona.
 
 const controller = new NegociacaoController();
 
-document
-    .querySelector('.form')
-    .addEventListener('submit',controller.adiciona.bind(controller));
+$('.form').submit(controller.adiciona.bind(controller));
     
     
